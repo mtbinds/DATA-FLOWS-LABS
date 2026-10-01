@@ -971,7 +971,7 @@ sans forcément casser :
 
 ```text
 le contrat interne entre composants du SI
-```.
+```
 
 ### `BrokerProperties`
 
