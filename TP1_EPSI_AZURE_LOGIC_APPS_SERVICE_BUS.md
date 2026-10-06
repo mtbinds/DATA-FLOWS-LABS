@@ -1,10 +1,15 @@
 # TP 1 - Flux de données avec Azure Logic Apps et Azure Service Bus - EPSI
 
 **Niveau :** *débutant à intermédiaire*
+
 **Durée indicative :** *2 h 30 à 4 h*
+
 **Mode principal :** **Portail Azure**
+
 **Mode secondaire :** *Azure CLI, uniquement en option et à titre de comparaison*
+
 **Architecture :** **Logic Apps Consumption**, **Service Bus Basic** et **Managed Identity**
+
 **Public visé :** *étudiants EPSI disposant d’un compte Azure personnel, Azure for Students ou d’un abonnement Azure fourni par l’établissement.*
 
 ---
