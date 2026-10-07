@@ -1,10 +1,15 @@
 # TP 2 - Routage et transformation de flux avec Azure Logic Apps et Azure Service Bus - EPSI
 
 **Niveau :** *intermédiaire*  
-**Durée indicative :** *3 h à 4 h*  
+
+**Durée indicative :** *3 h à 4 h* 
+
 **Mode principal :** **Portail Azure**  
+
 **Mode secondaire :** *Azure CLI, uniquement en option et à titre de comparaison*  
+
 **Architecture :** **Logic Apps Consumption**, **Azure Service Bus Basic**, **Managed Identity**, **Data Operations** et **Switch**  
+
 **Public visé :** *étudiants EPSI disposant d’un compte Azure personnel, Azure for Students ou d’un abonnement Azure fourni par l’établissement.*
 
 ---
