@@ -1276,11 +1276,11 @@ Sauvegardez.
 
 ---
 
-# 59. Étape 14 - Ajouter Parse JSON
+# 59. Étape 14 - Ajouter Compose
 
 Ajoutez :
 
-**Data Operations**, puis **Parse JSON**.
+**Compose**.
 
 Nom :
 
@@ -1296,7 +1296,7 @@ Body du trigger
 
 ---
 
-# 60. Pourquoi Parse JSON ?
+# 60. Pourquoi Compose ?
 
 Comme dans le TP2, nous l’utilisons pour :
 
@@ -1319,7 +1319,7 @@ Normalize_Priority
 Expression :
 
 ```text
-toLower(trim(body('Parse_Request')?['priority']))
+toLower(trim(outputs('Parse_Request')?['priority']))
 ```
 
 ---
@@ -1337,7 +1337,7 @@ Normalize_Category
 Expression :
 
 ```text
-toLower(trim(body('Parse_Request')?['category']))
+toLower(trim(outputs('Parse_Request')?['category']))
 ```
 
 ---
@@ -1399,14 +1399,14 @@ Exemple :
   "receivedAt": "@{utcNow()}",
   "source": "epsi-maintenance-portal",
   "data": {
-    "ticketId": "@{body('Parse_Request')?['ticketId']}",
-    "campus": "@{body('Parse_Request')?['campus']}",
-    "building": "@{body('Parse_Request')?['building']}",
-    "room": "@{body('Parse_Request')?['room']}",
+    "ticketId": "@{outputs('Parse_Request')?['ticketId']}",
+    "campus": "@{outputs('Parse_Request')?['campus']}",
+    "building": "@{outputs('Parse_Request')?['building']}",
+    "room": "@{outputs('Parse_Request')?['room']}",
     "category": "@{outputs('Normalize_Category')}",
     "priority": "@{outputs('Normalize_Priority')}",
-    "description": "@{body('Parse_Request')?['description']}",
-    "reportedBy": "@{body('Parse_Request')?['reportedBy']}"
+    "description": "@{outputs('Parse_Request')?['description']}",
+    "reportedBy": "@{outputs('Parse_Request')?['reportedBy']}"
   }
 }
 ```
